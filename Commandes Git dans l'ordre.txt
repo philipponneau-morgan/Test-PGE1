@@ -1,0 +1,4 @@
+- git status -> regarder le statut du repository
+- git add README.md -> ajouter la modification du fichier README.md dans la prochaine session de sauvegarde
+- git commit -m "nom de la sauvegarde" -> effectuer la sauvegarde avant le push
+- git push -> envoyer les changements vers le repository sur Github
