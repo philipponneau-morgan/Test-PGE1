@@ -1,0 +1,63 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Le chargement des profils personnels et système a duré 3205 ms.
+(base) PS C:\Users\phili\Desktop\MonProjetGithub> conda deactivate*
+usage: conda-script.py [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda-script.py: error: argument COMMAND: invalid choice: 'deactivate*' (choose from activate, build, clean, commands, compare, config, content-trust, convert, create, deactivate, debug, develop, doctor, env, export, index, info, init, inspect, install, list, menuinst, metapackage, notices, pack, package, remove, rename, render, repo, repoquery, run, search, server, skeleton, token, tos, uninstall, update, upgrade)
+(base) PS C:\Users\phili\Desktop\MonProjetGithub> conda deactivate
+PS C:\Users\phili\Desktop\MonProjetGithub> git config --global user.name "philipponneau-morgan"
+PS C:\Users\phili\Desktop\MonProjetGithub> git config --global user.email "morgan.philipponneau@supinfo.com"
+PS C:\Users\phili\Desktop\MonProjetGithub> git config --global credential.helper manager
+PS C:\Users\phili\Desktop\MonProjetGithub> git init
+Initialized empty Git repository in C:/Users/phili/Desktop/MonProjetGithub/.git/
+PS C:\Users\phili\Desktop\MonProjetGithub> git add .
+PS C:\Users\phili\Desktop\MonProjetGithub> git commit -m "NewSave"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\phili\Desktop\MonProjetGithub> git branch -M main
+PS C:\Users\phili\Desktop\MonProjetGithub> git remote add origin https://github.com/philipponneau-morgan/Test-PGE1.git
+PS C:\Users\phili\Desktop\MonProjetGithub> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/philipponneau-morgan/Test-PGE1.git'
+PS C:\Users\phili\Desktop\MonProjetGithub> git pull origin main --allow-unrelated-histories
+remote: Enumerating objects: 32, done.
+remote: Counting objects: 100% (32/32), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 32 (delta 1), reused 28 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (32/32), 3.42 KiB | 59.00 KiB/s, done.
+From https://github.com/philipponneau-morgan/Test-PGE1
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+PS C:\Users\phili\Desktop\MonProjetGithub> git push -u origin main
+info: please complete authentication in your browser...
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\phili\Desktop\MonProjetGithub> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\phili\Desktop\MonProjetGithub> git add .\README.md
+PS C:\Users\phili\Desktop\MonProjetGithub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+PS C:\Users\phili\Desktop\MonProjetGithub> git commit -m "modifreadme"
+[main 1ec728a] modifreadme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\phili\Desktop\MonProjetGithub> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/philipponneau-morgan/Test-PGE1.git
+   c9defbd..1ec728a  main -> main
+PS C:\Users\phili\Desktop\MonProjetGithub>
